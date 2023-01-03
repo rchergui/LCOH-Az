@@ -512,6 +512,5 @@ def Run_optimization(opt,stop,capex_w,opex_w,minpw,maxpw,
             
         return output, fig
 
-if __name__ == '__main__':
-    dash_app.run_server(debug=True)
+dash_app.run_server(mode='external',port=8006)
 
