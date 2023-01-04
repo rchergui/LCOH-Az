@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'LCOH1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AF92EB77150D4DD68F1EE429EC6608F4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F8E9ADC0682449D5BD68AC67DA8DA215 }}
