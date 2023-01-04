@@ -512,5 +512,5 @@ def Run_optimization(opt,stop,capex_w,opex_w,minpw,maxpw,
             
         return output, fig
 
-dash_app.run_server(mode='external',port=8050)
+dash_app.run_server(mode='external',port=8006)
 
