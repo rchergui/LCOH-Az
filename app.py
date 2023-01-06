@@ -1,6 +1,6 @@
 import pandas as pd                         ## Manipulation des tables de données et listes
 import numpy as np    
-
+import os
 import json
 import matplotlib.pyplot as plt
 
@@ -512,5 +512,9 @@ def Run_optimization(opt,stop,capex_w,opex_w,minpw,maxpw,
             
         return output, fig
 
-dash_app.run_server(debug=debug, host="0.0.0.0", port=port)
 
+if __name__ == "__main__":
+    # Get port and debug mode from environment variables    
+    port = os.environ.get('dash_port')
+    debug = os.environ.get('dash_debug')=="True"
+    dash_app.run_server(debug=debug, host="0.0.0.0", port=port)
