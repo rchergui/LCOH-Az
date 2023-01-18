@@ -285,8 +285,8 @@ def get_min_LCOH(capex_w,opex_w,minpw,maxpw,
     lcoh_ret = LCOH(mix_values)/1e4
     return [lcoh_ret,mix_values[0],mix_values[1],mix_values[2],total_H2,energy_lost,M_h2/365,M_n2/365]
 	
-dash_app = JupyterDash(external_stylesheets=[dbc.themes.MINTY])
-dash_app.layout = dbc.Container(
+app = JupyterDash(external_stylesheets=[dbc.themes.MINTY])
+app.layout = dbc.Container(
     [
         dbc.Row([
             dbc.Col([
@@ -414,7 +414,7 @@ T=25
 ######################################## Call Back
 
 
-@dash_app.callback(
+@app.callback(
     [Output('output', 'children'),Output('graph-output', 'figure')],
     [Input("opt", 'n_clicks_timestamp'),Input("stop", 'n_clicks_timestamp')],
     [
@@ -515,4 +515,4 @@ def Run_optimization(opt,stop,capex_w,opex_w,minpw,maxpw,
 
 if __name__ == "__main__":
     # Get port and debug mode from environment variables    
-    dash_app.run_server(debug=True)
+    app.run_server(debug=True)
