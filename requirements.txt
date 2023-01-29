@@ -67,7 +67,6 @@ pure-eval==0.2.2
 pycairo==1.20.1
 pycups==2.0.1
 Pygments==2.14.0
-PyGObject==3.42.2
 PyJWT==2.4.0
 pyparsing==3.0.7
 python-dateutil==2.8.2
