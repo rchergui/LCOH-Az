@@ -2,7 +2,6 @@ ansi2html==1.8.0
 asttokens==2.2.1
 backcall==0.2.0
 blinker==1.4
-Brlapi==0.8.4
 certifi==2022.12.7
 chardet==4.0.0
 charset-normalizer==3.0.1
